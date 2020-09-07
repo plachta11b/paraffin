@@ -43,12 +43,8 @@ mcat
 mds2
 meme
 motifsampler
-rck
-rnacontext
-rnamotifs2
 rpmcmc
 sshmm
-test
 weeder2
 xxmotif
 zagros
