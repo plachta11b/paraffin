@@ -1,0 +1,8 @@
+Usage: cmfinder [-options] <seqfile in> <cmfile output> 
+where options are:
+     -c <candidate file>: the candidate file 
+     -a <align file>    : the initial motif alignment 
+     -i <cm file>       : the initial covariance model
+     -o <align file>    : the output motif structural alignment in stockholm format 
+     -v verbose         : print intermediate alignments 
+     -h                 : print short help and version info

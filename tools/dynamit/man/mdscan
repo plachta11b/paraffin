@@ -1,0 +1,13 @@
+MDmodule usage:
+	-i <input sequences>
+	-w <motif width (default 10)>
+	-t <number of top sequences to look for candidate motifs (default 5)>
+	-c <number of top sequences to confirm candidate motifs (default whole dataset)>
+	-e <expectd bases per motif site in the top sequences (don't specify if unknown)>
+	-f <background frequency file (default yeast genome intergenic region)>
+	-b <background sequence file (default input sequences)>
+	-s <number of candidate motifs to scan and refine (default 30)>
+	-r <number of top motifs to report at the end (default 5)>
+	-n <number of refinement iterations (default 10)>
+	-o <output file (default stdout)>
+	-g 1 <if you don't want to see messages during the run>

@@ -1,0 +1,19 @@
+Usage: ./BioProspector -i seqfile (options)
+ Seqfile must be in restricted FASTA format.
+
+Options:
+  -W 	<motif width (default 10)>
+  -o 	<output file (default stdout)>
+  -f 	<background distribution file (default seqfile)>
+  -b 	<background sequence file (default input sequences)>
+  -n 	<number of times trying to find motif (default 40)>
+  -r 	<number of top motifs to report (default 5)>
+  -w 	<second motif block width for two-block motif (default 0)>
+  -p 1 	[if two-block motif is palindrome (default 0)]
+  -G 	<max gap between two motif blocks (default 0)>
+  -g 	<min gap between two motif blocks (default 0)>
+  -d 1 	[if only need to examine forward (default 2)]
+  -a 1 	[if every sequence contains the motif (default 0)]
+  -h 1 	[if want more degenerate sites (default fewer sites)]
+  -e 	<expected bases per motif site in the sequences
+	    (will use Bayes motif scoring, don't specify if unknown)>

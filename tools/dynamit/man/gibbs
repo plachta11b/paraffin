@@ -1,0 +1,74 @@
+Gibbs 3.10.001  Aug 12 2009
+	USAGE (site sampler) :: Gibbs file lengths {flags}
+	USAGE (motif sampler):: Gibbs file lengths expect {flags}
+	USAGE (recursive sampler):: Gibbs file lengths expect -E max_sites {flags}
+	USAGE (centroid sampler):: Gibbs file lengths expect -bayes -E max_sites {flags}
+
+	lengths = <int>[,<int>] : width of motif to be found
+	expect  = <int>[,<int>] : expect number of motif elements
+	max_sites  = <int> : max. sites/seq
+
+	possible flags:
+
+	-A                         init sample from prior
+	-B <bkgnd_filename>        Background Composition Model
+	-C <cutoff_value>          cutoff for near optimal sampler
+	-D <seqs[,aligned_seqs]>   Homologous sequences, seqs default = 2, aligned_segs def. = all seqs
+	-E max_sites               Set max sites/seq, use recursive sampler
+	-F                         Do not use fragmentation
+	-G                         Group Sampler
+	-H <weight_filename>       Sequence Weight File
+	-I <mnum, beg, end>*       direct repeat model between beg and end
+	-J                         Fragment sites in center only
+	-K <map>                   Alt. method of sampling sites/seq, min map to start (optional) (-E option only)
+	-L                         Motif sample before recursive (-E only)
+	-M <mnum, width>*          maximum widths for fragmentation
+	-N <scan_filename>         output data for Scan
+	-O <prout_filename>        output informative priors
+	-P <prior_filename>        file of informative priors
+	-Q <sample_filename>       save sample counts in file
+	-R <mnum, beg, end>*       palindromic model between beg and end
+	-S <num_Seeds>             number of seeds to try
+	-U <spacing_filename>      Spacing Model
+	-V <no. of seqs>           Verify Mode
+	-W <pseudo_wt>             pseudosite weight (between 0 and 1)
+	-X <min><,max<,step,<t>>>  Parallel Tempering (MPI version only)
+	-Y                         Calculate default pseudocount weight
+	-Z                         Don't write progress info
+	-a <mnum, beg, end, pal>*  Concentrate between beg and end
+	-align_centroid            Align the centroid sites
+	-b                         Sample from background
+	-bayes <burnin,<samples>>  Bayesian sampling
+	-bayes_counts              Print counts from Bayesian sampling in output
+	-c <mnum, beg, end>*       collapse alphabet between beg and end
+	-d <mnum, min, max>*       Allow width to vary
+	-f <cutoff_factor>         cutoff factor for recursive sampler
+	-frag                      alternate fragmentation sampling
+	-freq                      Print Frequency Solution (default for optimal models)
+	-g                         Sample along length of site
+	-h                         this message
+	-hierarchical_model <iter> hierarchical model for sites/seq
+	-i <iteration_num>         number of iterations to try
+	-j <period>                Frag/Shift period
+	-k <iteration_num>         number of iterations to sample after plateau
+	-l <control_filename>      Wilcoxon Signed Rank test
+	-m                         Do not maximize after near optimal sampling
+	-n                         Use nucleic acid alphabet
+	-nopt                      Don't print Near Optimal output
+	-nopt_disp <value>         Min probability for Nearopt display
+	-no_cred                   Don't calculate credibility limits for centroid.
+	-o <out_filename>          file where results will be written
+	-opt                       Print Near Optimal output (default for optimal models)
+	-p <plateau_per>           number of periods a maximum value hasn't changed
+	-pred_update               use preditive update to estimate motif model
+	-q                         Sample width counts
+	-r                         turn off reverse complements with DNA
+	-s <seedval>               random number generator seed 
+	-sample_model              sample motif model from dirichlet
+	-t                         Display sites used in near optimal sampling
+	-u                         Display output from suboptimal sampler
+	-v <overlap_value>         % to allow overlap at ends of sequence
+	-w <pseduo_cnt_wt>         pseduocount weight
+	-wilcox                    Wilcoxon sequences included in fasta file.
+	-x                         Do not remove low complexity regions
+	-y                         Don't print frequency solution

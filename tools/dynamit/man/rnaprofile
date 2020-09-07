@@ -1,0 +1,18 @@
+rnaprofile -h|--help print this help and quit
+rnaprofile -f <filename> [-params|-P|-p|-l|-L|-e|-I|-O|-s|-r|-d|-o|-i|-v]
+-f <filename>: import sequences from the file. REQUIRED
+-params <filename>: file where scoring parameters are defined.
+-A | -A <int>: align regions against regions taken from all the other sequences. If <int> is provided, expand profiles until they contain <int> regions (default: they are expanded until they contain exactly one region per sequence)
+-P <int>: number of best profiles (default: 100).
+-p <int>: max number of best profiles originating from same profile or region (default: 10).
+-l <int>: min length of regions (default:20).
+-L <int>: max length of regions (default: 40).
+-e <real>: max energy of regions (default: 0.0).
+-H <int>: number of hairpin of region (default: 1).
+-I <int>: max number of internal loop of region (default: don't check).
+-O: only optimal structures are accepted (default accept all regions).
+-s <int>: max length difference between regions to align (default: 10).
+-r yes|<int>: random alignment. If <int> is provided, it is used as random seed (default: no).
+-o <filename>: export selected regions to files, but don't process them.
+-i <int>: repeat alignments for <int> times (default: 1).
+-v: verbose output.

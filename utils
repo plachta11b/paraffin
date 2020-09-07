@@ -1,0 +1,10 @@
+# remove all memeris results from dynamit
+# find . -wholename "*tag_memeris" -type d -exec rm -rf "{}" \;
+# remove all mcat results
+# find . -wholename "*mcat" -type d -exec rm -rf "{}" \;
+
+# show retired scripts in retired_scripts branch
+# git checkout retired_scripts
+
+# download results
+# rsync -avP --delete -m --include="*/" --include="*result_converted.pwm" --exclude="*" rci:/home/holcajan/data/project_data/find_motifs ./

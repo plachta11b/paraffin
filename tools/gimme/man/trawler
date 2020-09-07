@@ -1,0 +1,45 @@
+########################################
+  Trawler standalone 2.0
+########################################
+
+## Running trawler.pl
+  ==========
+  Reading configuration and pipeline settings...
+  ==========
+
+
+ERROR: must specify a sample and organism with -sample and -org for bed input
+    OR specify a sample and background with -sample and -background for FASTA input
+
+    Usage:
+
+    If using BED formatted input:    trawler.pl -sample [file containing bed regions] -org [organism]
+    Refer to README.txt for more information on bed format usage.
+
+    If using FASTA formatted files:     trawler.pl -sample [file containing the enriched sequences] -background [file containing the background sequences]
+
+    -sample (FASTA format) better to be repeat-masked.
+    -background (FASTA format)
+
+    OPTIONAL PARAMETERS
+    ===================
+
+    [MOTIF DISCOVERY]
+    -occurrence (optional) minimum occurrence in the sample sequences. [DEFAULT = 10]
+    -mlength (optional) minimum motif length. [DEFAULT = 6]
+    -wildcard (optional) number of wild card in motifs. [DEFAULT = 2]
+    -strand (optional) single or double [DEFAULT = double]
+
+    [CLUSTERING]
+    -overlap (optional) in percentage. [DEFAULT = 70]
+    -motif_number (optional) total number of motifs to be clustered. [DEFAULT = 200]
+    -nb_of_cluster (optional) fixed number of cluster. if this option is set to an integer (1 and above), the k-mean clustering algorithm with fixed k will be used instead of the strongly connected component (SCC). [DEFAULT = NULL]
+
+    [VISUALIZATION]
+    -directory (optional) output directory. [DEFAULT = "TRAWLER_HOME/myResults"]
+    -dir_id (optional) gives an id to the results directory. [DEFAULT = NULL]
+    -xtralen (optional) add bases around the motifs for the logo. [DEFAULT = 0]
+    -alignments (optional) file containing the list of files containing the aligned sequences (see README file for more info) [DEFAULT = NULL]
+    -ref_species (optional) name of the reference species [DEFAULT = NULL]
+    -clustering (optional) if 1 the program clusters the instances, if 0 no clustering. [DEFAULT = 1]
+    -web (optional) if 1 the output will be a web page with all the information [DEFAULT = 1]

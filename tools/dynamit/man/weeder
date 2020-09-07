@@ -1,0 +1,9 @@
+Usage : weederlauncher.out inputfilename speciescode analysistype <options>
+
+speciescode: two-letter species code (e.g. HS, MM, RN, SC, and so on)
+analysistype: small|medium|large|extra
+options (not required):
+A: all sequences must contain the motif (default: half)
+S: process both strands of input sequences (default: single strand)
+M: multiple motif occurrences in each sequence (default: expect zero or one occurrences per sequence)
+T<number>: report top <number> motifs of each run

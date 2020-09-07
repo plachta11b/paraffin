@@ -1,0 +1,24 @@
+Usage: MotifSampler <ARGS>
+
+ Required Arguments
+  -f <fastaFile>      Sequences in FASTA format
+  -b <bgFile>         File containing the background model description
+
+
+ Optional Arguments
+  -s <0|1>            Select strand. (default both)
+                      0 is only input sequences, 1 include reverse complement.
+  -p <value>          Sets prior probability of 1 motif copy. (default 0.5).
+  -M <value>          Maximal number of motif instances per sequence. (default unset = 0)
+  -n <value>          Sets number of different motifs to search for (default 1).
+
+  -w <value>          Sets length of the motif (default 8).
+  -x <value>          Sets allowed overlap between different motifs. (default 1)
+  -r <runs>           Set number of times the MotifSampler should be repeated
+                      (default = 1).
+ Output formatting Arguments
+  -o <outFile>        Output file to write results (default stdout).
+  -m <matrixFile>     Output file to write retrieved motif models.
+
+Version 3.2
+Questions and Remarks: <gert.thijs@esat.kuleuven.ac.be>

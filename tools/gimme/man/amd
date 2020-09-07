@@ -1,0 +1,10 @@
+Usage:
+	Required arguments:
+	[-F] [Foreground file]
+	[-B] [Background file]
+
+	Optional arguments:
+	[-MI] [MircoRNA switch]
+	[-T] [Number of top k-mers considered,50 is default]
+	[-CO] [Similarity cutoff to eliminate redundancy,0.6 is default]
+	[-FC] [Fold change cutoff,1.2 is default]

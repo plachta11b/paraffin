@@ -1,0 +1,12 @@
+syntax: ./hms -i input_seq -w width -dna d_acgt -iteration no_of_iteration -chain no_of_chain -seqprop prop_of_random_sample -strand no_of_strand -base basecoverage_profile -dep dependency
+
+9 options need to be specified
+	INPUTFILE,
+	width,
+	d_acgt,
+	no_of_loop,
+	no_of_chain,
+	seqprop,
+	strand,
+	prior,
+	dependency.

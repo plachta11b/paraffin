@@ -1,0 +1,43 @@
+
+homer2 denovo -s <seq file> -g <group file> [options]
+
+Discover motif de novo in a set of sequences.
+
+Primary Inputs:
+		-s <sequence file> (tab delimited sequence file)
+		-g <group file> (sequence group and weight assignments)
+				--- or ---
+		-i <input FASTA file>
+		-b <background FASTA file>
+
+Options:
+		-o <output motif file> (default: sent to stdout)
+		-len <#> (length of motif to search for, default: 10)
+		-mis <#> (maximum number of mismatches in global search phase, default: 2)
+		-strand <+|-|both> (search for motifs on specific strand, default: both)
+		-stat <hypergeo|binomial> (enrichment statistic, default: binomial)
+		-S <#> (Total motifs to find, default: 25)
+		-olen <#> (length of lower-order oligos to normalize in oligo table)
+				-oout <filename> (output normalization weights to file)
+				-omax <#> (max oligo normalization iterations, default: 160)
+		-p <#> (Number of processers to use, default: 1)
+
+Advanced Options:
+		-nozoops (skip proper zoops scoring at end, default: -zoops)
+		-tmp <filename> (temporary results file, default: ".tmp.motifs")
+		-oligos <filename> (print enrichment of individual oligos)
+		-opt <motif file> (expand/futher optimize these motifs/skip global phase)
+
+		Speed vs. Sensitivity:
+		-fullMask | -quickMask (choose one:)
+				-fullMask (as motifs are found, mask them from original sequences.
+						Requires more memory but yields "cleaner" results, default)
+				-quickMask (as motifs are found, mask bound "oligos" only, old way)
+		-e <#> (maximum expected motif instances per bp, default: 0.005)
+		-T <#> (number of trial matrices when optimizing, default: 10)
+		-blen <#> (# of bp on either side to check for redundancy, default: 1)
+		-maxBack <#> (Max percentage of background that motifs may contain, default: 0.5)
+		-minlp <#> (minimum significance of seeds to optimize, default: -10.000)
+
+		Memory vs. Speed:
+		-cache <#> (size in MB of stat cache, helps for hypergeo, default: 500)

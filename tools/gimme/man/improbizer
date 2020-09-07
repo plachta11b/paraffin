@@ -1,0 +1,16 @@
+ameme - find common patterns in DNA
+usage
+    ameme good=goodIn.fa [bad=badIn.fa] [numMotifs=2] [background=m1] [maxOcc=2] [motifOutput=fileName] [html=output.html] [gif=output.gif] [rcToo=on] [controlRun=on] [startScanLimit=20] [outputLogo] [constrainer=1]
+where goodIn.fa is a multi-sequence fa file containing instances
+of the motif you want to find, badIn.fa is a file containing similar
+sequences but lacking the motif, numMotifs is the number of motifs
+to scan for, background is m0,m1, or m2 for various levels of Markov
+models, maxOcc is the maximum occurrences of the motif you
+expect to find in a single sequence and motifOutput is the name
+of a file to store just the motifs in. rcToo=on searches both strands.
+If you include controlRun=on in the command line, a random set of
+sequences will be generated that match your foreground data set in size,
+and your background data set in nucleotide probabilities. The program
+will then look for motifs in this random set. If the scores you get in a
+real run are about the same as those you get in a control run, then the motifs
+Improbizer has found are probably not significant.

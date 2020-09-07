@@ -1,0 +1,31 @@
+MDmodule usage:
+	-i <input sequences>
+	-w <motif width (default 10)>
+	-f <background frequency file>
+	-b <background sequence file (default input sequences)>
+	-k <background Markov dependency order (default don't specify)>
+	-e <expected bases per motif site in the top sequences
+	    (will use Bayes motif scoring, don't specify if unkown,
+	     which uses Liu motif scoring)>
+	-t <number of top sequences to look for candidate motifs (default 10)>
+	-s <number of candidate motifs to scan and refine (default 30)>
+	-c <number of top sequences to confirm candidate motifs
+	    (default whole dataset)>
+	-n <number of refinement iterations (default 15)>
+	-r <number of top motifs to report at the end (default 5)>
+	-a 1 <if want to print out alignments (default just motif matrics)>
+	-h <number of site hits (default 300)
+	    only works if also specified -a and -x>
+	-M <Monte Carlo simulation for motif score distribution
+	    (default no Monte Carlo or stat significance score)>
+	-C <number of child processes to run Monte Carlo simulation
+	    (default one process without no Monte Carlo simulation)>
+	-u Motif score distribution mean
+	    (default no stat significance score or perform Monte Carlo)>
+	-v Motif score distribution mean
+	    (default no stat significance score or perform Monte Carlo)>
+	-m <predefined motif consensus or degenerate (default do not specify)>
+	-p <+/- experiment number (default do not specify)>
+	-o <output file (default stdout)>
+	-x <matrixscan output file (default no matrixscan)>
+	-g 1 <if you don't want to see messages during the run>

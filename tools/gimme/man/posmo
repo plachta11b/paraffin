@@ -1,0 +1,14 @@
+POSMO May-19-2011: A program to efficiently discover DNA motifs in ChIP-seq peaks
+Usage: /usr/local/lib/python3.7/site-packages/gimmemotifs/included_tools/posmo <MB.mem> <pattern> <fasta.ifn> <nZ.len> <nZ.scr> <flank> <peakc>
+
+
+
+   Note: <pattern> is a 0-1 sequence, 0 means wild-card
+   Total number of 1s should be <12
+
+Cluster Words V 05.01.2011
+Usage: /usr/local/lib/python3.7/site-packages/gimmemotifs/included_tools/clusterwd <context.ifn> <ofn> <score.ofn>
+Usage: /usr/local/lib/python3.7/site-packages/gimmemotifs/included_tools/clusterwd <context.ifn> <ofn> <score.ofn> <f.pcc.Cut> <n.ICLen> <n.max.offset> <n.alignLength>
+       f.pcc.Cut: [0.6, 0.85]
+       n.ICLen: [8, 14]
+       n.alignLen: [8, 14]
